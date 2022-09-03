@@ -1,16 +1,21 @@
-import actionTypes from "./Phonebook-types";
+import { createAction } from "@reduxjs/toolkit";
 
-export const deleteContact = (id) => ({
-  type: actionTypes.DELETE_CONTACT,
-  payload: id,
-});
+const deleteContact = createAction("phonebook/deleteContact");
+const changeFilter = createAction("phonebook/changeFilter");
+const formSubmitData = createAction("phonebook/formSubmitData");
 
-export const changeFilter = (value) => ({
-  type: actionTypes.CHANGE_FILTER,
-  payload: value,
-});
+// export const deleteContact = (id) => ({
+//   type: actionTypes.DELETE_CONTACT,
+//   payload: id,
+// });
 
-export const formSubmitData = (data) => ({
-  type: actionTypes.FORM_SUBMIT_DATA,
-  payload: data,
-});
+// export const changeFilter = (value) => ({
+//   type: actionTypes.CHANGE_FILTER,
+//   payload: value,
+// });
+
+// export const formSubmitData = (data) => ({
+//   type: actionTypes.FORM_SUBMIT_DATA,
+//   payload: data,
+// });
+export default { deleteContact, changeFilter, formSubmitData };

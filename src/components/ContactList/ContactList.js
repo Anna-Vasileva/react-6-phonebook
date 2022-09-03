@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import s from "./ContactList.module.css";
 import ContactListItem from "../ContactListItem";
 import PropTypes from "prop-types";
-import * as actions from "../../redux/Phonebook/Phonebook-actions";
+import actions from "../../redux/Phonebook/Phonebook-actions";
 
 const ContactList = ({ contacts, filter, onDelete }) => {
   const normalizeFilter = filter.toLowerCase();

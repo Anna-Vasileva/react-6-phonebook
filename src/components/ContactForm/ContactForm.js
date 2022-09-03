@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import { connect } from "react-redux";
 import s from "./ContactForm.module.css";
 import PropTypes from "prop-types";
-import * as actions from "../../redux/Phonebook/Phonebook-actions";
+import actions from "../../redux/Phonebook/Phonebook-actions";
 
 function ContactForm({ onSubmit }) {
   const [name, setName] = useState("");
